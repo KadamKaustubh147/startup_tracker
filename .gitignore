@@ -1,1 +1,25 @@
 .obsidian
+
+# Virtual Environment Directories
+venv/
+.venv/
+env/
+
+# Database Files
+db.sqlite3
+
+# IDE and Editor Files
+.idea/
+.vscode/
+.pycharm/
+
+# Cache and Log Files
+__pycache__/
+*.log
+
+# OS-Generated Files
+.DS_Store
+Thumbs.db
+
+# Local Settings
+local_settings.py
