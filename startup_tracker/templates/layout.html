@@ -12,19 +12,68 @@
     </title>
     <link rel="stylesheet" href="{% static 'style.css' %}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .navbar{
+            height:70px;
+            background-color:rgba(10, 4, 22, 1);
+            ;
+        }
+        body{
+            background-color:rgba(184,184,255,255);
+            ;
+        }
+        .login{
+            background-color:rgba(177, 179, 175, 1);
+            width: 70px;
+            height:30px;
+            top: 29px;
+            left: 900px;
+            text-align: center;
+            border-radius: 15px 15px 15px 15px;
+            opacity: 0px;   
+        }
+        .Signup{
+            background-color:rgba(55, 54, 54, 1);
+            color: rgba(255, 255, 255, 1);
+            ;
+        
+            width: 120px;
+            height:30px;
+            top: 29px;
+            left: 900px;
+            text-align: center;
+            border-radius: 15px 15px 15px 15px;
+            opacity: 0px;   
 
+        }
+        .photo{
+            position: absolute;
+            right:1.3rem;
+            top: 11rem;
+            
+        }
+        .nav-links{
+             vertical-align: middle;
+        }
+    </style>
 </head>
 <body>
-        <nav class="navbar">
+        <nav class="navbar" >
         <div class="logo">
-            <a href="#">MyWebsite</a>
+            <a href="#">SPARK VENTURE</a>
         </div>
+        <div class="nav-links">
         <ul class="nav-links">
             <li><a href="{% url 'home' %}">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#contact">Contact</a></li>
-        </ul>
+            <li class="login">Log in</li>
+            <li class="Signup">Sign Up free</li>
+        </ul</div>
+        <div>
+            <img src="https://cdn.dribbble.com/userupload/14910164/file/original-4d1bd099f1aa569f000d8db54dfe7cb5.png?resize=800x600" class="photo">
+        </div>
         <div class="menu-toggle">
             <span></span>
             <span></span>
@@ -32,7 +81,7 @@
         </div>
 
     </nav>
-    <div>hello</div>
+    
 
     {% block content %}{% endblock %}
     <script src="{% static 'script.js' %}"></script>
