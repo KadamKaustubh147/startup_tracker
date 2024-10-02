@@ -53,18 +53,58 @@
             top: 11rem;
             
         }
-        .nav-links{
-             vertical-align: middle;
+        /* .nav-links{
+             ;
+        } */
+        .nav-linksdiv{
+            text-align: center;
+            
         }
+        h3{
+            
+
+      position: absolute;
+      width: 604px;
+      height: 167px;
+      left: 54px;
+      top: 231px;
+
+      font-family: 'Almarai';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 70px ;
+      line-height: 78px;
+      color: #000000;
+        }
+        
+        
+        p{
+          
+position: absolute;
+width: 560px;
+height: 102px;
+left: 54px;
+top: 404px;
+
+font-family: 'Amiko';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+
+color: #000000; }
+        
+       
     </style>
 
 </head>
 <body>
         <nav class="navbar" >
+            
         <div class="logo">
-            <a href="#">SPARK VENTURE</a>
+            <a class="websitename" href="#" style="text-decoration:none; color: white;" >SPARK VENTURE</a>
         </div>
-        <div class="nav-links">
+        <div class="nav-linksdiv">
         <ul class="nav-links">
             <li><a href="{% url 'home' %}">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -74,9 +114,7 @@
             <li class="login">Log in</li>
             <li class="Signup">Sign Up free</li>
         </ul</div>
-        <div>
-            <img src="https://cdn.dribbble.com/userupload/14910164/file/original-4d1bd099f1aa569f000d8db54dfe7cb5.png?resize=800x600" class="photo">
-        </div>
+        
 
             {% comment %} <li><a href="{% url 'Log In' %}">Log In</a></li>
             <li><a href="{% url 'Sign Up' %}">Sign Up</a></li> {% endcomment %}
@@ -89,6 +127,18 @@
         </div>
 
     </nav>
+    <div>
+
+        <div>
+            <img src="https://cdn.dribbble.com/userupload/14910164/file/original-4d1bd099f1aa569f000d8db54dfe7cb5.png?resize=800x600" class="photo">
+        </div>
+        <h3>
+            Unleash Your Startup Potential
+        </h3>
+        <p >
+        A platform for aspiring entrepreneurs to share startup ideas, connect with collaborators, and gain investor interest. Secure KYC ensures trust and transparency in every collaboration.
+        </p>
+    </div>
     
 
     {% block content %}{% endblock %}
