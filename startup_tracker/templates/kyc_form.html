@@ -3,5 +3,14 @@
 
 
 {% block content %}
-    Testing
+   <div class="container mt-5">
+    <h2>KYC Form for Startups</h2>
+
+    <form method="post" novalidate>
+        {% csrf_token %}  <!-- Security token -->
+        {{ form }}  <!-- Renders the form fields in <p> tags -->
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div> 
 {% endblock %}
