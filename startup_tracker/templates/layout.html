@@ -11,6 +11,8 @@
 
     </title>
     <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
 </head>
 <body>
         <nav class="navbar">
@@ -28,9 +30,10 @@
             <span></span>
             <span></span>
         </div>
-        </nav>
-        <div>hello</div>
-    
+
+    </nav>
+    <div>hello</div>
+
     {% block content %}{% endblock %}
     <script src="{% static 'script.js' %}"></script>
 </body>
