@@ -93,13 +93,19 @@ font-size: 20px;
 line-height: 27px;
 
 color: #000000; }
-        
-       
-    </style>
+
+.login a, .Signup a{
+    text-decoration: none;
+}
+
+
+
+
+</style>
 
 </head>
 <body>
-        <nav class="navbar" >
+        <nav class="navbar">
             
         <div class="logo">
             <a class="websitename" href="#" style="text-decoration:none; color: white;" >SPARK VENTURE</a>
@@ -111,9 +117,9 @@ color: #000000; }
             <li><a href="#services">Services</a></li>
             <li><a href="#contact">Contact</a></li>
 
-            <li class="login">Log in</li>
-            <li class="Signup">Sign Up free</li>
-        </ul</div>
+            <li class="login"><a href="{% url 'login' %}">Log in<a/></li>
+            <li class="Signup"><a href="{% url 'signup' %}">Sign Up free<a/></li>
+        </ul></div>
         
 
             {% comment %} <li><a href="{% url 'Log In' %}">Log In</a></li>
