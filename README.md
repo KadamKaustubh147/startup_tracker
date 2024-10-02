@@ -15,8 +15,8 @@ Unique Features of our project are GOOD UI/UX and built in admin panel
 
 1. Kaustubh Kadam (Team Lead): Backend + Version Control + Frontend
 2. Salla Tejaswi: Frontend
-3. Dev Dhansardiya: PPT + Logo Design + UI/UX
-4. Aditya Deshmukh: PPT + Logo Design + UI/UX
+3. Dev Dhansardiya: UI/UX
+4. Aditya Deshmukh:  UI/UX
 # Install and Running
 
 ### 1. **Clone the Repository**
