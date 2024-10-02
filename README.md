@@ -34,7 +34,7 @@ cd startup_tracker
 
 ### 2. Set up Virtual Environment
 
-Windows
+Windows(command prompt)
 ```bash
 python -m venv .venv
 .venv\Scripts\activate
