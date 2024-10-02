@@ -12,6 +12,7 @@
     </title>
     <link rel="stylesheet" href="{% static 'style.css' %}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
     <style>
         .navbar{
             height:70px;
@@ -56,6 +57,7 @@
              vertical-align: middle;
         }
     </style>
+
 </head>
 <body>
         <nav class="navbar" >
@@ -68,12 +70,18 @@
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#contact">Contact</a></li>
+
             <li class="login">Log in</li>
             <li class="Signup">Sign Up free</li>
         </ul</div>
         <div>
             <img src="https://cdn.dribbble.com/userupload/14910164/file/original-4d1bd099f1aa569f000d8db54dfe7cb5.png?resize=800x600" class="photo">
         </div>
+
+            {% comment %} <li><a href="{% url 'Log In' %}">Log In</a></li>
+            <li><a href="{% url 'Sign Up' %}">Sign Up</a></li> {% endcomment %}
+        </ul>
+
         <div class="menu-toggle">
             <span></span>
             <span></span>
