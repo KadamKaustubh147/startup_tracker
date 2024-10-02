@@ -17,11 +17,11 @@
         .navbar{
             height:70px;
             background-color:rgba(10, 4, 22, 1);
-            ;
+            width: 100vw;
         }
         body{
             background-color:rgba(184,184,255,255);
-            ;
+            overflow-x: hidden;
         }
         .login{
             background-color:rgba(177, 179, 175, 1);
@@ -36,7 +36,7 @@
         .Signup{
             background-color:rgba(55, 54, 54, 1);
             color: rgba(255, 255, 255, 1);
-            ;
+            
         
             width: 120px;
             height:30px;
@@ -56,11 +56,12 @@
         /* .nav-links{
              ;
         } */
-        .nav-linksdiv{
-            text-align: center;
-            
-        }
-        h3{
+    .nav-linksdiv{
+        text-align: center;
+        margin-left: 45vw;
+        {% comment %} margin-bottom: 15vw; {% endcomment %}
+    }
+h3{
             
 
       position: absolute;
@@ -75,10 +76,10 @@
       font-size: 70px ;
       line-height: 78px;
       color: #000000;
-        }
+}
         
         
-        p{
+p{
           
 position: absolute;
 width: 560px;
@@ -92,13 +93,20 @@ font-weight: 400;
 font-size: 20px;
 line-height: 27px;
 
-color: #000000; }
+color: #000000; 
+}
 
 .login a, .Signup a{
     text-decoration: none;
 }
 
+html{
+  scrollbar-width: none;  /* Disables scrollbar width */
+}
 
+::-webkit-scrollbar {
+  display: none;
+}
 
 
 </style>
@@ -110,7 +118,7 @@ color: #000000; }
         <div class="logo">
             <a class="websitename" href="#" style="text-decoration:none; color: white;" >SPARK VENTURE</a>
         </div>
-        <div class="nav-linksdiv">
+        <div class="nav-linksdiv" style="padding-top: 1.5rem">
         <ul class="nav-links">
             <li><a href="{% url 'home' %}">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -133,12 +141,8 @@ color: #000000; }
         </div>
 
     </nav>
-    <div>
-
         
-        
-    </div>
-    <footer>
+    {% comment %} <footer>
      <div class="footerdata" style="background-color: #000000; color: aliceblue; " >
     <div>
         <ul>
@@ -147,7 +151,7 @@ color: #000000; }
     </div>
      </div>
     </footer>
-    
+     {% endcomment %}
 
     {% block content %}{% endblock %}
     <script src="{% static 'script.js' %}"></script>

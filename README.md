@@ -7,13 +7,13 @@ At Spark Venture, we are dedicated to unlocking the potential of tomorrow's star
 
 We prioritize efficiency in all our initiatives, ensuring that each startup can seize the best opportunities available. By providing a sustainable environment for development, we empower entrepreneurs to focus on what truly matters: transforming their visions into reality. At Spark Venture, we believe that with the right support and resources, every startup has the potential to thrive and make a meaningful impact on the world. Join us as we embark on this exciting journey together!
 
-Unique Features of our project GOOD UI/UX and built in admin panel
+Unique Features of our project are GOOD UI/UX and built in admin panel
 
 ---
 
 # Team Members and Contributions
 
-1. Kaustubh Kadam (Team Lead): Backend + Version Control
+1. Kaustubh Kadam (Team Lead): Backend + Version Control + Frontend
 2. Salla Tejaswi: Frontend
 3. Dev Dhansardiya: PPT + Logo Design + UI/UX
 4. Aditya Deshmukh: PPT + Logo Design + UI/UX

@@ -17,11 +17,12 @@ body{
 
 body {
     font-family: Arial, sans-serif;
+    overflow-x: hidden;
 }
 
 .navbar {
     background-color:rgba(10, 4, 22, 1);
-    ;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -91,5 +92,8 @@ body {
 
     .navbar.active .nav-links {
         display: flex;
+    }
+    .photo{
+        display: none;
     }
 }
